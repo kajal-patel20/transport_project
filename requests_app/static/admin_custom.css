@@ -1,0 +1,347 @@
+* {
+    color: #000000 !important;
+}
+
+*:not(#header):not(#header *):not(.breadcrumbs):not(.breadcrumbs *) {
+    background-color: transparent !important;
+}
+
+body, html {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+#container, #content, #content-main, .colM, .colMS, .content {
+    background-color: #ffffff !important;
+}
+
+#header {
+    background-color: #0047AB !important;
+    color: white !important;
+}
+
+#header * {
+    color: white !important;
+}
+
+#header a:link, #header a:visited {
+    color: white !important;
+}
+
+.module, .dashboard .module {
+    background-color: #ffffff !important;
+    border: 1px solid #e0e0e0 !important;
+}
+
+.module h2, .module caption, .module thead th {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-bottom: 2px solid #0047AB !important;
+    font-weight: bold;
+}
+
+table, .results {
+    background-color: #ffffff !important;
+    border: none !important;
+}
+
+thead th, .results thead th {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #0047AB !important;
+    padding: 10px !important;
+}
+
+tbody tr, .results tbody tr {
+    background-color: #ffffff !important;
+}
+
+tbody tr:nth-child(even), .results tbody tr:nth-child(even) {
+    background-color: #f8f9fa !important;
+}
+
+tbody td, tbody th, .results tbody td {
+    color: #000000 !important;
+    background-color: inherit !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+    padding: 8px 10px !important;
+}
+
+#changelist {
+    background-color: #ffffff !important;
+}
+
+#changelist .results {
+    background-color: #ffffff !important;
+}
+
+#changelist-form {
+    background-color: #ffffff !important;
+}
+
+#changelist-filter {
+    background-color: #ffffff !important;
+    border-left: 1px solid #e0e0e0 !important;
+}
+
+#changelist-filter h2, #changelist-filter h3 {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.button, input[type="submit"], input[type="button"] {
+    background-color: #007BFF !important;
+    color: white !important;
+    border: none;
+    border-radius: 4px;
+}
+
+.button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #0056b3 !important;
+}
+
+.branding-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.site-logo {
+    height: 42px;
+    width: auto;
+    border-radius: 4px;
+}
+
+.site-title {
+    color: #ffffff; 
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+#header, #header .module, .module caption, .app-list {
+    background-color: #0047AB !important;
+    color: #ffffff !important;
+}
+
+a {
+    color: #000000 !important;
+    text-decoration: underline;
+}
+
+.module h2, .module caption {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+}
+
+#content {
+    background-color: #ffffff !important;
+}
+
+#content-main, .colM, .colMS {
+    background-color: #ffffff !important;
+}
+
+input[type="text"], input[type="password"], input[type="email"], 
+input[type="number"], textarea, select {
+    border: 1px solid #cccccc !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    padding: 6px !important;
+}
+
+.form-row {
+    background-color: #ffffff !important;
+}
+
+.aligned label, .inline-group {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.app-list {
+    background-color: #ffffff !important;
+}
+
+.app-list td, .app-list th {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.paginator {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.actions {
+    background-color: #f8f9fa !important;
+    border: 1px solid #e0e0e0 !important;
+}
+
+.submit-row {
+    background-color: #f8f9fa !important;
+    border-top: 1px solid #e0e0e0 !important;
+}
+
+div, section, article, aside, main {
+    background-color: transparent !important;
+}
+
+.object-tools {
+    background-color: #ffffff !important;
+}
+
+.inline-group, .inline-related {
+    background-color: #ffffff !important;
+}
+
+fieldset {
+    background-color: #ffffff !important;
+    border: 1px solid #e0e0e0 !important;
+}
+
+#container, #content, #content-main, 
+.colM, .colMS, .colSM, .colS,
+#changelist, #changelist-form,
+.change-list, .filtered,
+.module, .results,
+body.change-list #content,
+body.change-form #content,
+body.add-form #content {
+    background-color: #ffffff !important;
+}
+
+
+.results, .results table, 
+tbody, thead, tfoot,
+tr, td, th {
+    background-color: #ffffff !important;
+}
+
+/* Specific override for change list container */
+body.change-list {
+    background-color: #ffffff !important;
+}
+
+body.change-list #container {
+    background-color: #ffffff !important;
+}
+
+body.change-list #content {
+    background-color: #ffffff !important;
+}
+
+/* Remove dark backgrounds from all table elements */
+table tbody tr {
+    background-color: #ffffff !important;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f8f9fa !important;
+}
+
+table tbody tr:hover {
+    background-color: #e8f4f8 !important;
+}
+
+/* Ensure change list results are white */
+.change-list .results {
+    background-color: #ffffff !important;
+}
+
+.change-list tbody tr {
+    background-color: #ffffff !important;
+}
+
+.change-list tbody tr:nth-child(even) {
+    background-color: #f8f9fa !important;
+}
+
+/* Tables */
+table {
+    background-color: #ffffff !important;
+}
+
+thead th {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #cccccc !important;
+}
+
+tbody tr {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa !important;
+}
+
+tbody td {
+    color: #000000 !important;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    background-color: #0047AB !important;
+    color: #ffffff !important;
+}
+
+.breadcrumbs * {
+    color: #ffffff !important;
+}
+
+/* Content area - force white background and black text */
+#content, #content-main, .content {
+    background-color: #ffffff !important;
+}
+
+#content *, #content-main *, .content * {
+    color: #000000 !important;
+}
+
+/* Sidebar */
+#content-related, .sidebar {
+    background-color: #ffffff !important;
+}
+
+/* All paragraphs and labels - black text */
+p, label, span, div, td, th, li {
+    color: #000000 !important;
+}
+
+fieldset, .module, table, tr, td, th {
+    border-color: #cccccc !important;
+}
+
+.dashboard .module {
+    background-color: #ffffff !important;
+}
+
+.dashboard .module table {
+    background-color: #ffffff !important;
+}
+
+.dashboard .module th {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #cccccc !important;
+}
+
+.dashboard .module td {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+}
+
+/* Form rows */
+.form-row {
+    background-color: #ffffff !important;
+}
+
+.form-row * {
+    color: #000000 !important;
+}

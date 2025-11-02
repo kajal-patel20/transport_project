@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <style>
+        .form-input { width: 100%; padding: .5rem; margin-bottom: .75rem; }
+        .form-button { padding: .6rem 1rem; background:#1e40af;color:#fff;border:none;border-radius:6px }
+        .card { max-width:700px;margin:2rem auto;padding:1.5rem;background:#fff;border-radius:8px }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>{{ title }}</h1>
+
+        {% if messages %}
+            {% for msg in messages %}
+                <p style="color: {% if msg.tags == 'error' %}red{% else %}green{% endif %};">{{ msg }}</p>
+            {% endfor %}
+        {% endif %}
+        
+        <form method="post">
+            {% csrf_token %}
+            {{ form.non_field_errors }}
+
+            <label>Name of Employee</label>
+            {{ form.name_of_employee }}
+
+            <label>Employee Code</label>
+            {{ form.employee_code }}
+
+            <label>Mobile Number</label>
+            {{ form.mobile_number }}
+
+            <label>Type of Vehicle Required</label>
+            {{ form.vehicle_type }}
+
+            <label>Date of Vehicle Required</label>
+            {{ form.date_required }}
+
+            <label>Time Required</label>
+            {{ form.time_required }}
+
+            <label>Purpose</label>
+            {{ form.purpose }}
+
+            <label>Pick Up Location</label>
+            {{ form.pickup_location }}
+
+            <label>Drop Location</label>
+            {{ form.drop_location }}
+
+            <button type="submit" class="form-button">Submit Request</button>
+        </form>
+    </div>
+</body>
+</html>
