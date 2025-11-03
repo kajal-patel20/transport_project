@@ -11,10 +11,9 @@ class TransportRequest(models.Model):
 
     VEHICLE_CHOICES = [
         ("Car", "Car"),
-        ("SUV", "SUV"),
-        ("Van", "Van"),
+        ("Train", "Train"),
+        ("Flight", "Flight"),
         ("Bus", "Bus"),
-        ("Other", "Other"),
     ]
     vehicle_type = models.CharField(max_length=20, choices=VEHICLE_CHOICES, default="Car")
 
